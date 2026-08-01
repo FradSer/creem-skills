@@ -13,6 +13,15 @@ Install the Creem skill with two simple commands:
 
 That's it! Claude Code now has complete knowledge of the Creem API.
 
+## Quick Install for Codex
+
+Add this repository as a local Codex marketplace, then install the plugin:
+
+```bash
+codex plugin marketplace add .
+codex plugin add creem-api@creem-skills
+```
+
 ## What is a Skill?
 
 Skills are structured instructions and reference materials that AI assistants use to provide more accurate, contextual help for specific tasks. When you load a skill, the AI assistant gains deep knowledge about the domain and can guide you through implementations with best practices.
@@ -112,13 +121,18 @@ Most AI coding assistants support adding custom context. You can:
 ```
 skills/
 ├── .claude-plugin/
-│   └── marketplace.json    # Plugin marketplace configuration
-├── creem-api/
-│   ├── plugin.json         # Plugin metadata
-│   ├── Skill.md            # Core skill instructions
-│   ├── REFERENCE.md        # Detailed API reference
-│   ├── WEBHOOKS.md         # Webhook documentation
-│   └── WORKFLOWS.md        # Integration patterns
+│   └── marketplace.json    # Claude Code marketplace configuration
+├── .agents/
+│   └── plugins/
+│       └── marketplace.json # Codex marketplace configuration
+├── plugins/
+│   └── creem-api/
+│       ├── .claude-plugin/plugin.json # Claude Code plugin metadata
+│       ├── .codex-plugin/plugin.json  # Codex plugin metadata
+│       ├── skills/creem/SKILL.md      # Core skill instructions
+│       ├── REFERENCE.md               # Detailed API reference
+│       ├── WEBHOOKS.md                # Webhook documentation
+│       └── WORKFLOWS.md               # Integration patterns
 └── README.md               # This file
 ```
 
