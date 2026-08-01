@@ -1,0 +1,3 @@
+scopes:
+    - name: plugins
+      description: manages external integrations and skill definitions located in plugins/; does not cover root project configuration or root-level marketplace metadata
