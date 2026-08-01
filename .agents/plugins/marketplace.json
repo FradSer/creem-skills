@@ -1,0 +1,20 @@
+{
+  "name": "creem-skills",
+  "interface": {
+    "displayName": "Creem Skills"
+  },
+  "plugins": [
+    {
+      "name": "creem-api",
+      "source": {
+        "source": "local",
+        "path": "./plugins/creem-api"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

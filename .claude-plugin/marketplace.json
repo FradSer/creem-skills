@@ -12,7 +12,7 @@
   "plugins": [
     {
       "name": "creem-api",
-      "source": "./creem-api",
+      "source": "./plugins/creem-api",
       "description": "Integrate Creem payment infrastructure for checkouts, subscriptions, licenses, and webhooks. Complete API reference with implementation patterns.",
       "version": "1.0.0",
       "author": {
