@@ -1,0 +1,39 @@
+{
+  "name": "creem-api",
+  "version": "1.0.0",
+  "description": "Integrate Creem payment infrastructure for checkouts, subscriptions, licenses, and webhooks. Complete API reference with implementation patterns for SaaS and digital businesses.",
+  "author": {
+    "name": "Creem",
+    "email": "support@creem.io"
+  },
+  "homepage": "https://docs.creem.io/code/sdks/ai-agents",
+  "repository": "https://github.com/armitage-labs/creem-skills",
+  "license": "MIT",
+  "keywords": [
+    "payments",
+    "subscriptions",
+    "checkout",
+    "webhooks",
+    "licenses",
+    "saas",
+    "billing",
+    "merchant-of-record",
+    "creem",
+    "api",
+    "integration"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Creem API",
+    "shortDescription": "Integrate Creem payments into your application.",
+    "longDescription": "Official Creem payment integration guidance for checkouts, subscriptions, licenses, customers, discounts, transactions, and secure webhooks.",
+    "developerName": "Creem",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Help me integrate Creem payments.",
+      "Create a Creem checkout flow.",
+      "Implement a secure Creem webhook handler."
+    ]
+  }
+}
